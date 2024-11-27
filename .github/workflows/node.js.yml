@@ -20,11 +20,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: |   
-        touch .env
-        echo "${{ secrets.CloudSecurityBootcamp}}" > .env    
-    - run: sudo rm -rf /var/www/html/landing/*
-    - run: sudo cp -r /home/ubuntu/landing/_work/CloudSecurityBootcamp/CloudSecurityBootcamp/dist/* /var/www/html/landing
-    - run: sudo service nginx restart
+    # - run: |   
+    #     touch .env
+    #     echo "${{ secrets.CloudSecurityBootcamp}}" > .env    
+    # - run: sudo rm -rf /var/www/html/landing/*
+    # - run: sudo cp -r /home/ubuntu/landing/_work/CloudSecurityBootcamp/CloudSecurityBootcamp/dist/* /var/www/html/landing
+    # - run: sudo service nginx restart
         
  
