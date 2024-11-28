@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: react-app
-        image: my-react-app:latest  # Replace with your image
+        image: 127.0.0.1:5000/react-app 
 
         ports:
         - containerPort: 3000
